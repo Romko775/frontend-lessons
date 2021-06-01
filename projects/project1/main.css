@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+body {
+    padding-bottom: 47px;
+}
+
+/* header {
+    padding: 71px 0 92px; 
+} */
+
+header nav {
+    width: 555px;
+    margin: 71px auto 92px;
+}
+
+header nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav ul li {
+    list-style: none;
+    color: #7D7D7D;
+    cursor: pointer;
+}
+
+header nav ul li.active {
+    color: #03A9F4;
+}
+
+main {
+    width: 905px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    column-gap: 65px;
+    margin-bottom: 130px;
+    /* або gap: 65px */
+}
+
+.item {
+    width: 420px;
+}
+
+.item img {
+    margin-bottom: 62px;
+}
+
+.item .category {
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color: #B4AD9E;
+    margin-bottom: 32px;
+}
+
+.item h2 {
+    font-size: 30px;
+    line-height: 40px;
+    color: #626262;
+    margin-bottom: 40px;
+}
+
+.item p {
+    color: #626262;
+    line-height: 19px;
+}
+
+/* .load-more {
+    display: block;
+    width: 165px;
+    height: 60px;
+    background-color: white;
+    border: 1px solid #626262;
+    color: #626262;
+    margin: 0 auto;
+} */
+
+.load-more2 {
+    width: 165px;
+    height: 60px;
+    background-color: white;
+    border: 1px solid #626262;
+    color: #626262;
+    cursor: pointer;
+}
