@@ -36,7 +36,8 @@ header nav ul li.active {
 }
 
 main {
-    width: 905px;
+    width: 100%;
+    max-width: 905px;
     margin: 0 auto;
 }
 
@@ -44,6 +45,7 @@ main {
     display: flex;
     column-gap: 65px;
     margin-bottom: 130px;
+    flex-wrap: wrap;
     /* або gap: 65px */
 }
 
