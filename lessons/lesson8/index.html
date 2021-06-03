@@ -4,6 +4,7 @@
     <title>Document</title>
 
     <style>
+        /* Step 1 */
         /* body {
             background-image: url("https://cdn.pixabay.com/photo/2020/10/07/10/51/mountains-5634817_1280.jpg");
             background-attachment: fixed;
@@ -14,11 +15,12 @@
             height: 500px;
         } */
 
-        body {
+        /* body {
             margin: 0;
         }
 
-        .canvas {
+        /* Step 2 */
+        /* .canvas {
             max-width: 1000px;
             height: 400px;
 
@@ -30,15 +32,159 @@
 
             background-size: 80px, 100px, 150px, 130px, cover;
             background-repeat: no-repeat;
-            background-position: top 120px right 130px, top 90px left 90px, center,100px 60px, center;
+            background-position: top 120px right 130px, top 90px left 90px, center, 100px 60px, center;
+        } */ 
+
+
+        /* Step 3 */
+        /* img {
+            width: 480px;
+            height: 480px;
+            border: 1px solid black;
+            object-fit: none;
+        } */
+
+
+        /* Step 4 */
+
+        /* .list {
+            padding: 20px;
+            margin: 0;
+            list-style: none;
         }
+
+        .list-item:not(:last-child) {
+            margin-bottom: 5px;
+        }
+
+        .list-link {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .list-link::before,
+        .list-link::after {
+            content: "";
+            width: 24px;
+            height: 24px;
+        }
+
+        .list-link::before {
+            margin-right: 10px;
+            background-image: url("https://image.flaticon.com/icons/svg/785/785116.svg");
+        }
+
+        .list-link::after {
+            display: none;
+            margin-left: 10px;
+            background-image: url("https://image.flaticon.com/icons/svg/616/616430.svg");
+        }
+
+        .list-link:hover::after {
+            display: block;
+        } */
+        
+
+        /* Step 5 */
+
+         /* div {
+            width: 500px;
+            height: 200px;
+            border: 1px solid black;
+            background-image: linear-gradient(30deg, red, blue, yellow, green);
+            background-image: linear-gradient(to right, #c64f4f 15%,#09792b 15%,
+                        #09792b 40%,
+                        #00b9ff 40%,
+                        #00b9ff 65%,
+                        #ffb800 65%
+                        );
+
+            background-image: radial-gradient(red, blue);
+        }  */
+
+        /* Step 6 */
+
+        article {
+            box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        article .title-stripped {
+            text-align: center;
+            padding: 20px;
+            text-transform: uppercase;
+            color: white;
+            font-size: 40px;
+            background-image: repeating-linear-gradient(-45deg, 
+                        #606dbc,
+                        #606dbc 10px,
+                        #465298 10px,
+                        #465298 20px
+                        );
+        }
+
+        article .title-radial {
+            text-align: center;
+            padding: 20px;
+            text-transform: uppercase;
+            color: white;
+            font-size: 40px;
+            background-image: repeating-radial-gradient(
+                        circle,
+                        purple,
+                        purple 10px,
+                        #4b026f 10px,
+                        #4b026f 20px
+                    );
+        }
+
+        article p {
+            background-color: white;
+            padding: 20px;
+        }
+
+        
     </style>
 </head>
 <body>
+    <!-- Step 1 -->
     <!-- <div style="background-color: yellow;"></div>
     <div style="background-color: red;"></div>
     <div style="background-color: blue;"></div> -->
 
-    <div class="canvas"></div>
+    <!-- Step 2 -->
+    <!-- <div class="canvas"></div> -->
+
+    <!-- Step 3 -->
+    <!-- <img src="https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=320&w=240" alt=""> -->
+
+
+    <!-- Step 4 -->
+    <!-- <h1>::after</h1>
+    <h1>::before</h1> -->
+
+    <!-- tag::before {
+        content: ""
+    } -->
+
+    <!-- <ul class="list">
+        <li class="list-item">
+            <a class="list-link">Home 1</a>
+        </li>
+        <li class="list-item"><a class="list-link">Home 2</a></li>
+        <li class="list-item"><a class="list-link">Home 3</a></li>
+    </ul> -->
+
+    <!-- Step 5 -->
+
+    <article>
+        <div class="title-stripped">Header</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, deserunt nisi voluptatum magni quisquam nobis, nesciunt possimus quod iure, aspernatur nulla sapiente. Quia nam illum quod ad fugit, similique enim!</p>
+    </article>
+
+    <article>
+        <div class="title-radial">Header</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, deserunt nisi voluptatum magni quisquam nobis, nesciunt possimus quod iure, aspernatur nulla sapiente. Quia nam illum quod ad fugit, similique enim!</p>
+    </article>
 </body>
 </html>
