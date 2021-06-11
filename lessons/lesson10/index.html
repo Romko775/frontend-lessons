@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            margin: 0 15px;
+
+            transition-duration: 1s;
+        }
+
+        .box:nth-child(1) {
+            background-color: orange;
+        }
+
+        .box:nth-child(2) {
+            background-color: red;
+        }
+
+        .box:nth-child(3) {
+            background-color: green;
+        }
+
+        .scale-box:hover:nth-child(1) {
+            transform: scale(1.25);
+        }
+
+        .scale-box:hover:nth-child(3) {
+            transform: scale(0.75);
+        }
+
+        .rotate-box:hover:nth-child(1) {
+            transform: rotate(30deg);
+        }
+
+        .rotate-box:hover:nth-child(2) {
+            transform: rotate(1.5turn);
+        }
+
+        .rotate-box:hover:nth-child(3) {
+            transform: rotate(-45deg);
+        }
+
+        /* translateX(x) */
+        /* translateY(y) */
+        /* translate(x, y) */
+
+        .translate-box:hover:nth-child(1) {
+            transform: translateX(50px);
+        }
+
+        .translate-box:hover:nth-child(2) {
+            transform: translateY(100px);
+        }
+
+        .translate-box:hover:nth-child(3) {
+            transform: translate(-50px, -100px);
+        }
+
+        /* skew(x-кут, y-кут) */
+        /* skewX(x-кут) */
+        /* skewY(y-кут) */
+
+        .skew-box:hover:nth-child(1) {
+            transform: skew(30deg, 30deg);
+        }
+
+        .skew-box:hover:nth-child(2) {
+            transform: skewX(30deg);
+        }
+
+        .skew-box:hover:nth-child(3) {
+            transform: skewY(30deg);
+        }
+
+        /* transform-origin */
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box scale-box">Box 1</div>
+        <div class="box scale-box">Box 2</div>
+        <div class="box scale-box">Box 3</div>
+    </div>
+
+    <div class="container">
+        <div class="box rotate-box">Box 1</div>
+        <div class="box rotate-box">Box 2</div>
+        <div class="box rotate-box">Box 3</div>
+    </div>
+
+    <div class="container">
+        <div class="box translate-box">Box 1</div>
+        <div class="box translate-box">Box 2</div>
+        <div class="box translate-box">Box 3</div>
+    </div>
+
+    <div class="container">
+        <div class="box skew-box">Box 1</div>
+        <div class="box skew-box">Box 2</div>
+        <div class="box skew-box">Box 3</div>
+    </div>
+    
+</body>
+</html>
