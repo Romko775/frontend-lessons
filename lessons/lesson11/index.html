@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Урок 11</title>
+
+    <style>
+        /* Stage 1 */
+        /*
+        
+            transition-property
+            transition-duration
+            transition-timing-function
+            transition-delay
+        
+
+         .box {
+             width: 200px;
+             height: 200px;
+             background-color: red;
+
+             transition-property: background-color, transform;
+             transition-duration: 1s;
+             transition-timing-function: linear;
+             transition-delay: 500ms;
+
+             transition: [property] [duration] [timing-function] [delay];
+
+             transition: background-color 500ms, 
+                         transform 1s;
+
+             
+             1s = 1000ms
+             0.5s = 500ms
+             1хвилина = 60s = 60000ms
+              
+         }
+
+         .box:hover {
+             background-color: teal;
+             transform: rotate(200deg);
+         }
+
+         */
+
+        /* Stage 2 */
+
+        /* 
+            animation-name
+            animation-duration
+            animation-timing-function
+            animation-delay
+
+
+
+            animation-iteration-count
+            animation-direction
+               - normal
+               - reverse
+               - alternate
+               - alternate-reverse
+            animation-fill-mode
+               - none
+               - forwards
+               - backwards
+               - both
+            animation-play-state
+               - running
+               - paused
+         */
+
+        /* .box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid grey;
+            animation-name: bgChangeAnimation;
+            animation-duration: 3s;
+            animation-iteration-count: 1;       
+            animation-fill-mode: both;
+        }
+
+        @keyframes bgChangeAnimation {
+            0% {
+                background-color: red;
+            }
+
+            20% {
+                background-color: orange;
+            }
+
+            60% {
+                background-color: green;
+            }
+
+            80% {
+                background-color: teal;
+            }
+
+            100% {
+                background-color: black;
+            }
+        } */
+
+        /* img {
+            width: 300px;
+            height: 300px;
+            animation-name: spin;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite; */
+
+
+        /* animation: [name] 
+                          [duration] 
+                          [timing-function] 
+                          [delay] 
+                          [iteration-count]
+                          [direction] 
+                          [fill-mode] 
+                          [play-state]; */
+
+
+        /*  
+                          
+                .box {
+                    animation: magic 2s infinite;
+                }
+
+                .box {
+                    animation: magic 2s 0.5s ease-in-out;
+                }
+
+                .box {
+                    animation: magic 2s ease-in-out 0.5s forwards;
+                }
+
+                .box {
+                    animation: magic 2s forwards infinite ease-out 0.5s;
+                }
+                          
+                */
+        /* }
+
+        img:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        } */
+
+        .container {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .scene {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            background-color: #fff;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: white;
+        }
+
+        .box.rotate-x {
+            background-color: tomato;
+            animation: rotateX 1500ms infinite alternate ease-in-out 1000ms;
+        }
+
+        .box.rotate-y {
+            background-color: blue;
+            animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
+        }
+
+        .scene+.scene {
+            /* тільки елемент якbq йдe після першого .scene */
+            margin-left: 50px;
+        }
+
+        @keyframes rotateX {
+            0% {
+                transform: perspective(400px) rotateX(0deg);
+            }
+
+            100% {
+                transform: perspective(400px) rotateX(60deg);
+            }
+        }
+
+        @keyframes rotateY {
+            0% {
+                transform: perspective(400px) rotateY(0deg);
+            }
+
+            100% {
+                transform: perspective(400px) rotateY(60deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Stage 1 -->
+    <!-- <div class="box"></div> -->
+
+    <!-- Stage 2 -->
+    <!-- <div class="box"></div>
+
+    <img src="https://image.flaticon.com/icons/svg/2917/2917242.svg" alt=""> -->
+
+    <!-- Stage 3 -->
+</body>
+<div class="container">
+    <div class="scene">
+        <div class="box rotate-x">rotateX(60deg)</div>
+    </div>
+    <div class="scene">
+        <div class="box rotate-y">rotateY(60deg)</div>
+    </div>
+</div>
+
+</html>
+
+width: 100vw;
+height: 100vh;
