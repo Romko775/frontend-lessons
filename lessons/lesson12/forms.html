@@ -11,6 +11,23 @@
         fieldset {
             margin-bottom: 10px;
         }
+
+        .form-group {
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 10px;
+
+            position: relative;
+        }
+
+        .form-group p {
+            background-color: white;
+            position: absolute;
+            top: 0;
+            transform: translateY(-150%);
+        }
+
+
     </style>
 </head>
 <body>
@@ -191,6 +208,57 @@
                 <input type="checkbox">
             </label>
         </fieldset>
+    </form>
+
+
+    <!-- Початок форми -->
+    <form>
+
+        <!-- Блок групи -->
+        <div class="form-group" role="group" aria-labelledby="courses">
+
+            <!-- Заголовок групи -->
+            <p>Контактні дані</p>
+
+            <!-- Інпути -->
+            <label>
+                Ім'я
+                <input type="text">
+            </label>
+
+            <!-- Інпути -->
+            <label>
+                Прізвище
+                <input type="text">
+            </label>
+        </div>
+
+        <!-- Блок групи -->
+        <div class="form-group" role="group" aria-labelledby="news">
+            
+            <!-- Заголовок групи -->
+            <p>Новини про курси</p>
+
+            <!-- Інпути -->
+            <label>
+                HTML
+                <input type="checkbox">
+            </label>
+
+            <!-- Інпути -->
+            <label>
+                CSS
+                <input type="checkbox">
+            </label>
+
+            <!-- Інпути -->
+            <label>
+                JS
+                <input type="checkbox">
+            </label>
+        </div>
+
+    <!-- Кінець форми -->
     </form>
 
 

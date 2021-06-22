@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* 
+        :enabled та :disabled
+        :checked
+        :in-range та :out-of-range
+        :required та :optional
+        :valid та :invalid
+        :placeholder-shown
+
+        :focus-within
+         */
+
+        /* Stage 1 */
+        /* label {
+            display: block;
+        }
+
+        button {
+            width: 200px;
+            border: none;
+            border-radius: 4px;
+            background-color: violet;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background-color: red;
+            cursor: not-allowed;
+        }
+
+        .group {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* div.group > div > .form-label {
+            display: inline-block;
+        }
+
+        .form-input:checked+.form-label {
+            color: blue;
+        } 
+
+        #amount:in-range {
+            border-color: green;
+        }
+
+        #amount:out-of-range {
+            border-color: red;
+        }
+
+        #email:required+span {
+            color: red;
+        } */
+
+
+        /* Stage 2 */
+        /* .form-input:valid {
+            border-color: green;
+        }
+
+        .form-input:invalid {
+            border-color: red;
+        } */
+
+        /* Stage 3 */
+
+        /* input:placeholder-shown {
+            border-color: red;
+        }
+
+        input:not(:placeholder-shown) {
+            border-color: green;
+        } */
+
+        /* input:not(:placeholder-shown):required:valid {
+            border-color: green;
+        }
+
+        input:not(:placeholder-shown):required:invalid {
+            border-color: red;
+        } */
+
+        /* Stage 4 */
+
+        .form {
+            width: 100%;
+            padding: 24px;
+            border-radius: 4px;
+            border: 2px dashed black;
+        }
+
+        .form-label {
+            display: flex;
+            margin-bottom: 16px;
+        }
+
+        button:hover,
+        button:focus {
+            background-color: red;
+        }
+
+        .form:focus-within {
+            border-color: blue;
+        }
+
+        .form-label:focus-within {
+            color: blue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Stage 1 -->
+    <!-- <form class="form">
+
+        <div class="group" role="group">
+            <p>Ваше хоббі?</p>
+            <div>
+                <input class="form-input" type="checkbox" name="hobby" value="sports" id="sports">
+                <label class="form-label" for="sports">Спорт</label>
+            </div>
+
+            <div>
+                <input class="form-input" type="checkbox" name="hobby" value="music" id="music">
+                <label class="form-label" for="music">Музика</label>
+            </div>
+        </div>
+
+        <div class="group" role="group">
+
+            <div> 
+                <label for="amount">Скільки замовляти піц?</label>
+                <input type="number" required min="2" max="10" step="1" value="0" id="amount">
+            </div>
+        </div>
+
+
+        <div class="group" role="group">
+            <div>
+                <label for="username">Username <span>(optional)</span></label>
+                <input type="text" id="username">
+            </div>
+
+            <div>
+                <label for="email">Email <span>(required)</span></label>
+                <input type="email" id="email" required>
+                <span>This field is required</span>
+            </div>
+        </div>
+
+
+        <button type="submit" enabled>Submit</button>
+        <button type="submit" disabled>Submit</button>
+    </form> -->
+
+    <!-- Stage 2 -->
+    <!-- <form>
+        <label>
+            Username
+            <input class="form-input" type="text" minlength="3">
+        </label>
+
+        <label>
+            Email
+            <input class="form-input" type="email" required>
+        </label>
+
+        <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- Stage 3 -->
+    <!-- <form>
+        <input type="text" placeholder="Напишіть ім'я користувача" required minlength="3">
+    </form> -->
+
+    <!-- Stage 4 -->
+
+    <form class="form">
+
+        <label class="form-label">
+            <span class="label-text">Username</span>
+            <input type="text" autocomplete="off" 
+                class="form-input" 
+                name="username" 
+                required 
+                minlength="3">
+        </label>
+
+        <label class="form-label">
+            <span class="label-text">Email</span>
+            <input type="email" 
+                autocomplete="off" 
+                class="form-input" 
+                name="email" 
+                required>
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
