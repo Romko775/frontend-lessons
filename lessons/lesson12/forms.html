@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms</title>
+    <style>
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        fieldset {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+
+        POST 
+            http://www.google.com/  
+            {
+                "user_name": "Romko"
+            }
+
+        
+
+
+
+        GET  
+            http://www.google.com/?word=dog
+            http://www.my-site/?login=roman&password=123
+
+        PUT
+            http://www.my-site.com/  
+            {
+                "old_password": "123",
+                "new_password": "456"
+            }
+
+        DELETE
+            http://www.my-site.com/
+            {
+                "user_id": "qweqlk-qweqwe-sdf"
+            }
+
+        CRUD
+        - create
+        - read
+        - update
+        - delete
+     -->
+
+     <!-- <form  name="login_form">
+         <label>
+             Email
+             <input type="email" required placeholder="Ваш емейл">
+         </label>
+         <label>
+            Password
+             <input type="password">
+         </label>
+         <button>Login</button>
+     </form>
+
+     <br>
+     <br>
+     <br>
+
+     <form name="register_form">
+        <label>
+            Email
+            <input type="email" required>
+        </label>
+
+        <label for="password">Password</label>
+        <input id="password" type="password">
+
+        <label>
+            Repeat Password
+            <input type="password">
+        </label>
+        <button>Register</button>
+    </form> -->
+
+    <!-- <label> Пустий <input type="text"> </label> <br><br>
+    <label> Автофокус <input type="text" autofocus> </label> <br><br>
+    <label> Максимально 3 букви <input type="text" maxlength="3"> </label> <br><br>
+    <label> Із вказанням дії <input type="text" placeholder="Ім'я"> </label> <br><br>
+    <label> Із початковим значення <input type="text" value="Іван Іванович Іваненко"> </label> <br><br>
+    <label> Тільки режим читання <input type="text" value="Роман" readonly> </label> <br><br>
+    <label> Неактивний <input type="text" value="Роман" disabled> </label> <br><br>
+    <label> Обов'язковий <input type="text" placeholder="Ім'я" required> </label> <br><br>
+
+    <form>
+        <label> Обов'язковий <input type="text" placeholder="Ім'я" required> </label>
+        <button type="submit">Надіслати</button>
+    </form>
+
+
+    <label> <input type="file"></label> -->
+
+    <!-- <label>Варіант 1 <input type="radio" name="variants"></label>
+    <label>Варіант 2 <input type="radio" name="variants"></label>
+    <label>Варіант 3 <input type="radio" name="variants"></label>
+
+    <label>Я прочитав умови <input type="checkbox" checked></label>
+
+    <form>
+        <input type="email">
+        <input type="password">
+
+        <button type="reset">Скинути</button>
+        <button type="submit">Надіслати</button>
+    </form> -->
+
+
+    <!-- <form action="">
+        <input type="hidden" value="token_123123kjh132kjh">
+        <input type="number" min="10" max="100">
+        <input type="color">
+    </form> -->
+
+    <!-- <textarea rows="30" cols="20"></textarea> -->
+    <!-- <label>Extra small <input type="radio" name="sizes" value="xs"></label>
+    <label>Small <input type="radio" name="sizes" value="s"></label>
+    <label>Medium <input type="radio" name="sizes" value="m"></label>
+    <label>Large <input type="radio" name="sizes" value="l"></label> -->
+
+    <!-- <label for="sizes">Виберіть розмір одягу</label>
+    <select id="sizes">
+        <option value="" disabled  selected hidden>Оберіть розмір</option>
+        <option value="xs">Extra small</option>
+        <option value="s">Small</option>
+        <option value="m">Medium</option>
+        <option value="l">Large</option>
+    </select> -->
+
+    <!-- <label for="months">Виберіть місяць</label>
+    <select id="months">
+        <optgroup label="Зима">
+            <option value="12">Грудень</option>
+            <option value="1">Січень</option>
+            <option value="2">Лютий</option>
+        </optgroup>
+        <optgroup label="Весна">
+            <option value="3">Березень</option>
+            <option value="4">Квітень</option>
+            <option value="5">Травень</option>
+        </optgroup>
+    </select>
+
+    <label for="fav">Виберіть веб-переглядач</label>
+    <input list="browsers" id="fav" type="text">
+
+    <datalist id="browsers">
+        <option>Edge</option>
+        <option>IE</option>
+        <option>Chrome</option>
+        <option>Opera</option>
+        <option>Safari</option>
+    </datalist> -->
+
+    <form>
+        <fieldset>
+            <legend>Контактні дані</legend>
+            <label>
+                Ім'я
+                <input type="text">
+            </label>
+            <label>
+                Прізвище
+                <input type="text">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <p>Новини про курси</p>
+            <label>
+                HTML
+                <input type="checkbox">
+            </label>
+
+            <label>
+                CSS
+                <input type="checkbox">
+            </label>
+
+            <label>
+                JS
+                <input type="checkbox">
+            </label>
+        </fieldset>
+    </form>
+
+
+</body>
+</html>
