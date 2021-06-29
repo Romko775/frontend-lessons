@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document (Copy check)</title>
+</head>
+
+<body>
+
+    <form class="form">
+        <input type="text" class="form__input">
+
+        <button class="form__submit"></button>
+    </form>
+
+
+    <input type="text" class="input">
+
+    <!--  -->
+
+    <a class="logo"></a>
+
+    <p class="alert"></p>
+
+
+    <div class="gallery"></div>
+
+    <div class="page-header"></div>
+
+    <section class="section"></section>
+
+
+
+    <button class="red-btn round-btn"></button>
+
+    <p class="alert alert-primary"></p>
+
+    <!-- Можна -->
+    <p class="alert alert-danger"></p>
+
+    <!-- Не можна -->
+    <p class="alert red-background-red-text-border-top-black"></p>
+
+    <!-- 
+        1) Може складатися тільки з латинських букв, цифр і тире.
+
+        2) Повинно відповідати на питання «Що це?» - widget, gallery, navigation, post.
+
+        3) Не повинно відповідати на питання «Як виглядає?» - red-text, round-button и т. д. 
+        ??? Як з цієї ситуації вийти -> class="alert alert-success"
+     -->
+
+
+    <!-- Вкладеність -->
+    <header class="page-header">
+        <a class="logo"></a>
+
+        <ul class="navigation">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </header>
+
+
+    <!-- ---------------------------------------- -->
+
+    <!-- 
+         Елемент
+      -->
+
+    <!-- 
+          1) Обов'язково назва із нижніми підкресленнями 
+          form__input, logo__image, form__label
+
+          2) Повинно відповідати на питання «Що це?»
+          блок__title, блок__body, блок__image
+
+          page__title, page__body, page__image
+          card__title, card__body, card__image
+
+          3) Не повинно відповідати на питання «Як виглядає?»
+          
+          Не допускається
+          блок__blue-text, блок__red-border ...
+       -->
+
+    <!-- 1 -->
+
+    <!-- ✅ Правильно ✅ -->
+    <a class="logo">
+        <img class="logo__image" src="" alt="">
+        <p class="logo__label">Гарний котик</p>
+    </a>
+
+    <!-- ❌ НЕ правильно ❌ -->
+    <!-- Елемент не може застосовуватися поза блоком -->
+    <img class="logo__image" src="" alt="">
+
+
+    <!-- 2 -->
+
+    <!-- ✅ Правильно ✅ -->
+    <div class="product">
+        <img class="product__image" src="" alt="">
+        <h2 class="product__title">Холодильник NoName</h2>
+        <span class="product__price">17 000 ₴</span>
+        <p class="product__description">400л, no frost, сіренький</p>
+        <div class="product__rate">★★★☆☆</div>
+        <a class="product__link" href="">Купити / Подивитися - (Краще купити)</a>
+    </div>
+
+    <!-- 
+        .product__link {
+            width: 200px;
+            height: 50px;
+            color: white;
+            background-color: red;
+        }
+     -->
+
+    <!-- ❌ НЕ правильно ❌ -->
+    <!-- Елемент не може застосовуватися поза блоком -->
+    <p class="product__description">400л, no frost, сіренький</p>
+
+
+    <!-- <div class="country country-ukraine">
+        <div class="country__district">
+            <span class="district__name">Київська</span>
+            <span class="country__city">Київ</span>
+        </div>
+        <div class="country__district">Львівська</div>
+        <div class="country__district">Рівненська</div>
+        <div class="country__district">Чернівецька</div>
+        <div class="country__district">Черкаська</div>
+        <div class="country__district">Вінницька</div>
+        <div class="country__district">Івано-Франківська</div>
+        <div class="country__district">Луганська</div>
+        <div class="country__district">Донецька</div>
+        <div class="country__district">Дніпропетровська</div>
+        <div class="country__district">Харківська</div>
+        <div class="country__district">Миколаївська</div>
+        <div class="country__district">Запорізька</div>
+        <div class="country__district">Одеська</div>
+        <div class="country__district">Кіровоградська</div>
+
+        <div class="country__district">АР Крим</div>
+    </div>
+
+    <div class="country country-poland">
+        <div class="country__district">Нижньосілезьке</div>
+        <div class="country__district">Куявсько-Поморське</div>
+        <div class="country__district">Люблінське</div>
+        <div class="country__district">Любуське</div>
+    </div> -->
+
+    <!--  -->
+
+
+    <div class="product">
+        <div class="product__overlay">
+            <img class="product__image" src="" alt="">
+        </div>
+
+        <div class="product-content">
+            <h2 class="product__title">Холодильник NoName</h2>
+            <p class="product__description">400л, no frost, сіренький</p>
+        </div>
+
+        <div class="product__meta">
+            <div class="product__rate">★★★☆☆</div>
+            <span class="product__price">17 000 ₴</span>
+            <a class="product__link" href="">Купити / Подивитися - (Краще купити)</a>
+        </div>
+    </div>
+
+    <!--  Необов'язковість -->
+
+        <!-- Не можна придбати -->
+        <div class="product">
+            <div class="product__overlay">
+                <img class="product__image" src="" alt="">
+            </div>
+            <div class="product-content">
+                <h2 class="product__title">Холодильник NoName</h2>
+                <p class="product__description">400л, no frost, сіренький</p>
+            </div>
+            <div class="product__meta">
+                <div class="product__rate">★★★☆☆</div>
+                <span class="product__price">17 000 ₴</span>
+            </div>
+        </div>
+
+        <!-- Немає опису -->
+        <div class="product">
+            <div class="product__overlay">
+                <img class="product__image" src="" alt="">
+            </div>
+    
+            <div class="product-content">
+                <h2 class="product__title">Холодильник NoName</h2>
+            </div>
+    
+            <div class="product__meta">
+                <div class="product__rate">★★★☆☆</div>
+                <span class="product__price">17 000 ₴</span>
+                <a class="product__link" href="">Купити / Подивитися - (Краще купити)</a>
+            </div>
+        </div>
+
+        <!-- Немає картинки -->
+        <div class="product">
+
+            <div class="product-content">
+                <h2 class="product__title">Холодильник NoName</h2>
+                <p class="product__description">400л, no frost, сіренький</p>
+            </div>
+
+            <div class="product__meta">
+                <div class="product__rate">★★★☆☆</div>
+                <span class="product__price">17 000 ₴</span>
+                <a class="product__link" href="">Купити / Подивитися - (Краще купити)</a>
+            </div>
+        </div>
+
+        <!--              -->
+        <!-- Модифікатори -->
+        <!--              -->
+
+        <!-- 
+            1) Повинно бути простим, що описує зміну, яка вноситься.
+            // Bootstrap 
+               alert   alert-success
+            [element]  [модифікатор]
+
+            2) Формування імені за схемою    блок--модифікатор, блок__елемент--модифікатор
+            form__input--disabled
+            form__input--error
+            
+         -->
+
+         <!-- ❌ НЕ правильно ❌ -->
+         <!-- Елемент не може застосовуватися поза блоком -->
+         <input type="text" class="form__input--error">
+
+
+         <!-- ❌ НЕ правильно ❌ -->
+         <form class="form">
+             <input type="text" class="form__input--error">
+         </form>
+
+         <!-- ✅ Правильно ✅ -->
+         <form class="form">
+            <input type="text" class="form__input form__input--error">
+         </form>
+
+         <!--  -->
+
+         <div class="alert alert--danger"></div>
+         <div class="alert alert--succes"></div>
+         <div class="alert alert--warning"></div>
+
+</body>
+
+</html>
