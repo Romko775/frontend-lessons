@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pizza</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            line-height: 1.5;
+            background-color: #f9f9fd;
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #222;
+        }
+
+        .logo {
+            display: inline-flex;
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .page-header__logo {
+            margin-right: 50px;
+            background: linear-gradient(to left, #e66465, #9198e5);
+        }
+
+        .nav {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+        }
+
+        .nav__item:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        .nav__link {
+            display: block;
+            padding: 15px 30px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .page-footer {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            background-color: #222;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="page-header">
+        <a class="logo page-header__logo">Pizza Club</a>
+        <ul class="nav">
+            <li class="nav__item">
+                <a href="" class="nav__link">Про нас</a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">Контакти</a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">Замовити піцу</a>
+            </li>
+        </ul>
+    </header>
+
+    <main></main>
+
+    <footer class="page-footer">
+        <a class="logo">Pizza Club</a>
+    </footer>
+</body>
+
+</html>
