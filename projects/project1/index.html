@@ -2,15 +2,15 @@
 <html lang="ua">
 <head>
     <title>Project 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
     <header>
-        <nav>
+        <nav id="navigation__desktop">
             <ul>
                 <li class="active">LIFESTYLE</li>
                 <li>PHOTODIARY</li>
@@ -18,6 +18,23 @@
                 <li>TRAVEL</li>
             </ul>
         </nav>
+
+        <nav id="navigation__mobile">
+            <div class="navigation__mobile__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <div id="navigation__mobile__floating-menu" class="navigation__mobile__floating-menu">
+            <ul>
+                <li class="active">LIFESTYLE</li>
+                <li>PHOTODIARY</li>
+                <li>MUSIC</li>
+                <li>TRAVEL</li>
+            </ul>
+        </div>
     </header>
 
     <main>
@@ -66,5 +83,10 @@
         </div>
     </main>
     
+    <!-- <script>
+        document.getElementById('navigation__mobile__burger').onclick = function () {
+            document.getElementById('navigation__mobile__floating-menu').style.display = 'block';
+        }
+    </script> -->
 </body>
 </html>

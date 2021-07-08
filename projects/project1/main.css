@@ -10,28 +10,29 @@ body {
     padding-bottom: 47px;
 }
 
-/* header {
-    padding: 71px 0 92px; 
-} */
-
-header nav {
+header nav#navigation__desktop {
     width: 555px;
     margin: 71px auto 92px;
 }
 
-header nav ul {
+header nav#navigation__mobile,
+.navigation__mobile__floating-menu {
+    display: none;
+}
+
+header nav#navigation__desktop ul {
     padding: 0;
     display: flex;
     justify-content: space-evenly;
 }
 
-header nav ul li {
+header nav#navigation__desktop ul li {
     list-style: none;
     color: #7D7D7D;
     cursor: pointer;
 }
 
-header nav ul li.active {
+header nav#navigation__desktop ul li.active {
     color: #03A9F4;
 }
 
@@ -50,11 +51,13 @@ main {
 }
 
 .item {
-    width: 420px;
+    width: 100%;
+    max-width: 420px;
 }
 
 .item img {
     margin-bottom: 62px;
+    width: 100%;
 }
 
 .item .category {
@@ -94,4 +97,84 @@ main {
     border: 1px solid #626262;
     color: #626262;
     cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    header nav#navigation__desktop {
+        display: none;
+    }
+
+    header nav#navigation__mobile {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 50px;
+        /* background-color: red; */
+        margin-bottom: 50px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    header nav#navigation__mobile .navigation__mobile__burger {
+        width: 30px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    header nav#navigation__mobile .navigation__mobile__burger span {
+        display: block;
+        height: 2px;
+        width: 75%;
+        background-color: black;
+    }
+
+    .navigation__mobile__floating-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        width: 80%;
+        height: 100vh;
+        display: none;
+    }
+
+    .navigation__mobile__floating-menu ul {
+        height: 100%;
+    }
+
+    .navigation__mobile__floating-menu ul li {
+        font-size: 40px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    .item {
+        max-width: unset;
+        margin-bottom: 20px;
+    }
+
+    .item p,
+    .item h2,
+    .item .category {
+        padding: 0 15px;
+    }
+
+    .row {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .row {
+        justify-content: center;
+        column-gap: 8px;
+    }
+
+    .item {
+        max-width: 380px;
+        
+    }
+    
 }

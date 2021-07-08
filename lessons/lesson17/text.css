@@ -1,0 +1,15 @@
+.baseClass1 {}
+.baseClass2 {}
+.baseClass3 {}
+
+@media screen and (min-width: 768px) {
+    .newClass1 {}
+    .newClass2 {}
+    .newClass3 {}
+}
+
+@media screen and (min-width: 1024px) {
+    .desktopClass1 {}
+    .desktopClass2 {}
+    .desktopClass3 {}
+}
