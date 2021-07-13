@@ -1,0 +1,140 @@
+/* 
+    Common
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Paytone One', sans-serif;
+}
+
+/* 
+    App styles
+*/
+
+.header {
+    position: fixed;
+    top: 0;
+    padding: 35px 55px 0;
+    z-index: 9999;
+}
+
+.header__navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu {
+    display: flex;
+    list-style: none;
+    column-gap: 30px;
+}
+
+.header__menu-item {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.logo {
+    margin-right: 70px;
+}
+
+.container {
+    width: 994px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.form {
+    display: flex;
+    column-gap: 20px;
+}
+
+.form__input,
+.form__submit {
+    background-color: transparent;
+    height: 36px;
+    color: rgba(255, 255, 255, 0.4);
+    border-radius: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    font-family: 'Pavanam', sans-serif;
+    font-size: 14px;
+}
+
+.form__input {
+    padding: 9px 35px;
+}
+
+.form__submit {
+    padding: 9px 20px;
+    border-color: #FF1640;
+    line-height: 14px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.form__submit:hover {
+    /* border-color: rgba(255, 255, 255, 0.4); */
+    background-color: #FF1640;
+    color: white;
+}
+
+/*  */
+
+#section-top {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/main-bg.jpg);
+    background-position: center center;
+
+    position: relative;
+}
+
+#section-top .container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-top__main-header {
+    font-size: 64px;
+    color: #fff;
+}
+
+.section-top__secondary-header {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.section-top__description {
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    color: #fff;
+    max-width: 432px;
+    margin-bottom: 25px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 25px 0;
+}
