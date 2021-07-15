@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <nav class="header__navigation">
             <a class="logo" href="">
                 <img class="logo__img" src="img/logo.svg" alt="logo">
@@ -26,36 +26,57 @@
             </ul>
         </nav>
     </header>
-    <section id="section-top">
-        <div class="container">
-            <div style="padding: 76px 65px 79px;">
-                <h1 class="section-top__main-header">ALPINE</h1>
-                <h2 class="section-top__secondary-header">SOCIAL MEDIA MARKETING PLATFORM</h2>
-                <p class="section-top__description">
-                    The core systems of record for marketing that provide a common way of orchestring the experiences
-                    across channels and applications, including operational managment and measurement, with the ultimate
-                    goal of driving customer engagement.
-                </p>
-                <form class="form">
-                    <input class="form__input" type="email" placeholder="Enter your work email !" required>
-                    <button class="form__submit" type="submit">Request acces</button>
-                </form>
-            </div>
-            <div class="social-media">
-                <img height="18" width="83" class="social-media__item" src="img/social/facebook.png" alt="facebook">
-                <img height="26" width="92" class="social-media__item" src="img/social/instagram.png" alt="instagram">
-                <img height="14" width="71" class="social-media__item" src="img/social/twitter.png" alt="twitter">
-                <img height="15" width="79" class="social-media__item" src="img/social/youtube.png" alt="youtube">
-                <img height="36" width="89" class="social-media__item" src="img/social/pinterest.png" alt="pinterest">
-                <img height="26" width="57" class="social-media__item" src="img/social/google.png" alt="google">
-            </div>
-        </div>
+    <section id="section-top"></section>
+    <section id="section-middle">
+        <div class="box"></div>
     </section>
-    <!-- <section id="section-middle">
-        <div class="container">
 
+    <div class="container">
+        <div style="padding: 76px 65px 79px;">
+            <h1 class="section-top__main-header">ALPINE</h1>
+            <h2 class="section-top__secondary-header">SOCIAL MEDIA MARKETING PLATFORM</h2>
+            <p class="section-top__description">
+                The core systems of record for marketing that provide a common way of orchestring the experiences
+                across channels and applications, including operational managment and measurement, with the ultimate
+                goal of driving customer engagement.
+            </p>
+            <form class="form">
+                <input class="form__input" type="email" placeholder="Enter your work email !" required>
+                <button class="form__submit" type="submit">Request acces</button>
+            </form>
         </div>
-    </section> -->
+        <div class="social-media">
+            <img height="18" width="83" class="social-media__item" src="img/social/facebook.png" alt="facebook">
+            <img height="26" width="92" class="social-media__item" src="img/social/instagram.png" alt="instagram">
+            <img height="14" width="71" class="social-media__item" src="img/social/twitter.png" alt="twitter">
+            <img height="15" width="79" class="social-media__item" src="img/social/youtube.png" alt="youtube">
+            <img height="36" width="89" class="social-media__item" src="img/social/pinterest.png" alt="pinterest">
+            <img height="26" width="57" class="social-media__item" src="img/social/google.png" alt="google">
+        </div>
+        <div class="promo">
+            <div class="promo__image"></div>
+            <div class="promo__image"></div>
+            <div class="promo__image"></div>
+        </div>
+        <div class="marketing">
+            <span class="marketing__text">MARKETING</span>
+            <img class="marketing__lines" src="img/lines.svg" alt="lines">
+            <button class="marketing__btn">
+                <img src="img/write.svg" alt="write">
+                Start a thread
+            </button>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            if(window.scrollY > 200) {
+                document.getElementById('header').classList.add('header__scrolled');
+            } else {
+                document.getElementById('header').classList.remove('header__scrolled');
+            }
+        });
+    </script>
 </body>
 
 </html>
